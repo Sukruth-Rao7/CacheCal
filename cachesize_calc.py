@@ -50,7 +50,7 @@ def main():
     if(Associativity == 1): #Fully set associative cache for any block size 
         Numberofsets = int(Numberofwords / block_size)
         Numberofblocks = Numberofsets
-        block_offset = block_offset = int(math.log(Numberofblocks,2)) 
+        block_offset = block_offset = int(math.log(block_size,2)) 
         block_offset_bits = b[System_Architecture_bits-byteoffset-block_offset:]
         print("Number of sets = NA")
         print("Set bits = NA")
